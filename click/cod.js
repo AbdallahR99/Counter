@@ -1,7 +1,5 @@
 /*global console*/
-var c = "#00f",
-    o,
-    p = parseFloat(o, 9);
+var c = "#00f";
 
 function clicked() {
     "use strict";
@@ -11,7 +9,8 @@ function clicked() {
         z = parseFloat(x, 10),
         y = z.toString(9),
         n = document.getElementById("endNum").value,
-        m = parseFloat(n, 10) + 1;
+        m = parseFloat(n, 10) + 1,
+        o;
     z += 1;
     if (y.length === 1) {
         o = document.getElementById("shadowOfNum").innerHTML;

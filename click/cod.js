@@ -14,13 +14,14 @@ function clicked() {
     if (y.length === 1) {
         document.getElementById("num").innerHTML = "0" + z;
         document.getElementById("shadowOfNum").innerHTML = "0" + z;
-    } else if (z === m) {
-        document.getElementById("num").innerHTML = "00";
-        document.getElementById("bg").style.background = "#00f";
-        c = "#00f";
     } else {
         document.getElementById("num").innerHTML = z;
         document.getElementById("shadowOfNum").innerHTML = z;
+    }
+    if (z === m) {
+        document.getElementById("num").innerHTML = "00";
+        document.getElementById("bg").style.background = "#00f";
+        c = "#00f";
     }
 }
 

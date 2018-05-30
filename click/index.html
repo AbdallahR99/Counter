@@ -16,14 +16,6 @@
         .shadowOfNum {
             opacity: 0.2;
             filter: alpha(opacity=20);
-            -webkit-transform:rotateY(180deg);
-            -moz-transform:rotateY(180deg);
-            -o-transform:rotateY(180deg);
-            -ms-transform:rotateY(180deg);
-            -webkit-transform:rotateX(180deg);
-            -moz-transform:rotateX(180deg);
-            -o-transform:rotateX(180deg);
-            -ms-transform:rotateX(180deg);
             }
         #reset {
             font-size: 50px;
@@ -54,6 +46,16 @@
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             -webkit-appearance: none;
+        }
+        #endNum::placeholder {
+            color: #fff;
+            opacity: 0.5;
+        }
+        #endNum:-ms-input-placeholder {
+            color: #fff;
+        }
+        #endNum::-ms-input-placeholder {
+            color: #fff;
         }
     </style>
     </head>

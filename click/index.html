@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Click Click</title>
+    <style>
+        .myDiv {
+            background: #00f;
+            text-align: center;
+            padding: 100px;
+            }
+        .numDiv {
+            line-height: 0px;
+            font-size: 76px;
+            color: #fff;
+            }
+        .shadowOfNum {
+            opacity: 0.2;
+            filter: alpha(opacity=20);
+            -webkit-transform:rotateY(180deg);
+            -moz-transform:rotateY(180deg);
+            -o-transform:rotateY(180deg);
+            -ms-transform:rotateY(180deg);
+            -webkit-transform:rotateX(180deg);
+            -moz-transform:rotateX(180deg);
+            -o-transform:rotateX(180deg);
+            -ms-transform:rotateX(180deg);
+            }
+        #reset {
+            font-size: 50px;
+            background: none;
+            color: #fff;
+            border: 1px solid #fff;
+            }
+        #reset:hover {
+            color: #E84D39;
+            background: #fff;
+            }
+        * {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+            }
+        *:focus {outline: none;}
+        #endNum {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 32px;
+            text-align: center;
+            width: 180px;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+    </head>
+<body>
+    <div class="myDiv" id="bg">
+        <div class="numDiv" onclick="clicked()">
+            <h1 id="num">00</h1>
+            <h1 id="shadowOfNum" class="shadowOfNum">00</h1>
+        </div>
+        <input type="number" placeholder="End number" id="endNum">
+        <br><br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="cod.js">
+    </script>
+</body>

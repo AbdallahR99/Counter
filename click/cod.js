@@ -27,6 +27,7 @@ function clicked() {
 function reset() {
     "use strict";
     c = "#00f";
+    document.getElementById("reset").style.color = "#00f";
     document.getElementById("bg").style.background = "#00f";
     document.getElementById("num").innerHTML = "00";
 }
